@@ -99,7 +99,9 @@ struct CompilerLinkerOptions {
     UInt8 gen_isel;
     UInt8 gen_fsel;
     UInt8 gecko_float_typecons;
+#if VERSION >= VERSION_GC_2_0
     UInt8 disable_vector_frame;
+#endif
     UInt8 opt_bcc_lr_ctr;
     UInt8 use_lmw_stmw;
     char report_heap_info;

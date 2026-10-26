@@ -2263,7 +2263,7 @@ static void CParser_ParseAttributeFunctionSummary(DeclInfo* declinfo) {
 
 #if VERSION < VERSION_GC_2_5
 #undef CError_LINE_SHIFT
-#define CError_LINE_SHIFT -48
+#define CError_LINE_SHIFT (-48 + CError_LINE_DELTA)
 #endif
 void CParser_ParseAttribute(Type* type, DeclInfo* declinfo) {
     CInt64 val64;
